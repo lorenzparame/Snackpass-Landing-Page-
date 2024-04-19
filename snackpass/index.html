@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://framerusercontent.com/images/QcJlkppIvozH5vwWisLEYnJi9E.png">
+	<title>Snackpass - The Quick Serve Platform</title>
+        <style>
+            body{
+                font-family: sans-serif;
+                overflow-x: hidden;
+                background: hsl(53,36%,98%);
+                
+
+            }
+            .header_logo{
+                width: 130px;
+                height: 25px;
+                margin-left: 23px;
+                margin-top: 20px;
+ 
+            }
+            .header_anchor{
+                margin-top: -10px;
+                margin-right: 150px;
+                float: right;
+
+            }
+            .header_anchor a{
+                margin-right: 25px;
+                color: #585b5f;
+                text-decoration: none;
+                font-size: 16px;
+            }
+            .header_anchor a:hover{
+                color: black;
+            }
+            .header_button button{
+                padding: 10px 15px;
+                float: right; 
+                background-color: #0099FF; 
+                color: white; 
+                text-align: center; 
+                text-decoration: none; 
+                font-size: 16px; 
+                border: none; 
+                border-radius: 7px; 
+                cursor: pointer;
+                font-weight: bold;
+                box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.8);
+                margin-right: -450px;
+                margin-top: -19px;
+            }
+            .paris{
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .una img{
+                display: block;
+                width: 450px;
+                height: 470px;
+                border-radius: 20px;
+                margin-top: 50px;
+                margin-right: -10px;
+
+            }
+            h1 {
+            float: right;
+            font-family: "Times New Roman", Times, serif;
+            position: absolute;
+            left: 850px;
+            font-size: 60px;
+            letter-spacing: 0px;
+            line-height: 1.5;
+            color: #333333;
+            font-weight: 400;
+        }
+        h2 {
+            font-family: sans-serif;
+            float: right;
+            position: absolute;
+            left: 850px;
+            color: grey;
+        }
+
+        .dos h1{
+            margin-top: 160px;
+            margin-left: -120px;
+
+        }
+        .dos h2{
+            margin-top: 160px;
+            margin-left: -120px;
+        }
+        .tres h1{
+            margin-top: 200px;
+            margin-left: 0px;
+        }
+        .tres h2{
+            margin-top: 200px;
+            margin-left: 0px;
+        }
+        .kwatro h1{
+            margin-top: 400px;
+            margin-left: 0px;
+        }
+        .kwatro h2{
+            margin-top: 400px;
+            margin-left: 0px;
+        }
+        .parisan{
+            margin-top: -90px;
+        }
+        .parisan h1{
+            margin-top: 320px;
+        }
+        .parisan h2{
+            margin-top: 320px;
+        }
+        
+     .heading {
+    position: absolute;
+    top: 2230px;
+    left: 370px;
+    font-size: 60px;
+    margin-top: 55px;
+}
+.running {
+    margin-left: 1000;
+    top: 1880px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.running_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.running_list li {
+    margin-right: 10px;
+}
+
+.running_list {
+    position: absolute;
+    animation: moveRightToLeft 150s linear infinite;
+}
+
+.running_list img {
+    width: 200px; 
+    height: 90px; 
+    object-fit: contain;
+    image-rendering: auto;
+    background-color: #f0eeea;
+    border-radius: 16px;
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.runningwan {
+    margin-left: 1000;
+    top: 2000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.running_listwan {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.running_listwan li {
+    margin-right: 10px;
+}
+
+.running_listwan {
+    position: absolute;
+    animation: moveLeftToRight 150s linear infinite;
+}
+
+.running_listwan img {
+    width: 200px; 
+    height: 90px; 
+    object-fit: contain;
+    image-rendering: auto;
+    background-color: #f0eeea;
+    border-radius: 16px;
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.swipe{
+    top: 2200px;
+    position: relative;
+}
+
+
+
+.swipe {
+    position: relative;
+    width: 100%; /* Adjust width as needed */
+    margin-bottom: 2500px;
+}
+
+.swipe .swipe_list {
+    list-style: none;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.swipe .one{
+    background-color: rgb(223, 224, 225);
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+
+}
+.swipe .one .one1 {
+    background-color: rgb(223, 224, 225);
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    position: relative; /* Ensure positioning context for absolutely positioned elements */
+}
+
+.swipe .one video {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 15px;
+    
+}
+
+
+
+}
+
+
+.swipe .swipe_list li {
+    display: none; /* Initially hide all slides */
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box;
+}
+
+.swipe .swipe_list li.one {
+    display: block; /* Display the first slide */
+}
+
+.swipe button {
+    position: absolute;
+    top: 740px;
+    transform: translateY(-50%);
+    background-color: #0099FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#left,
+#right {
+    font-size: 24px; /* Adjust the size as needed */
+    color: #0099FF; /* Adjust the color as needed */
+    cursor: pointer; /* Add cursor pointer for interaction */
+    position: absolute; /* Position the icons */
+    margin-top: -300px; /* Adjust vertical position */
+    color: black;
+    border-radius: 100%;
+    font-size: 40px;
+    background-color: transparent;
+}
+
+#left {
+    left: 30px; /* Adjust horizontal position */
+}
+
+#right {
+    right: 30px; /* Adjust horizontal position */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+            
+            
+       
+        
+    </style>
+<script src="https://kit.fontawesome.com/ecd5e25db3.js" crossorigin="anonymous"></script>
+</head>
+<body >
+<header>
+   <div class="header"> 
+    <div class="header_logo">
+        <a href="#">
+    <img src="logo.png" alt="Logo">
+    </a>
+    </div>
+    <div class="header_anchor">
+        <a href="#">Our Story</a>
+        <a href="#">Media</a>
+        <a href="#">Customer Stories</a>
+    </div>
+    <div class="header_button">
+        <a href="#"><button>Get a Demo</button></a>
+    </div>
+</header>
+<main>
+    <section class="paris">
+        <div class="una">
+            <img src="picwan.png" alt="pic">
+    <h1 style="top: 90px;">The most</h1>
+    <h1 style="top: 150px;">advanced kiosk</h1>
+    <h1 style="top: 210px;">of all time.</h1>
+    <h2 style="top: 340px;">Join thousands of owners and</h2>
+    <h2 style="top: 370px;">give your guests an ordering</h2>
+    <h2 style="top: 400px;">experience they will love.</h2>
+    <a href="#"><button style="padding: 10px 15px; background-color: #f0f0f0; color:black; border-radius: 7px; background-color: #0099FF; border: none; font-size: 16px; color: white; color: white; margin-top: 350px; float: right; position: absolute; left: 850px; font-weight: bold;box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.8); margin-top: -90px; cursor: pointer;">Get a Demo</button></a>
+    <img src="pic4.png" alt="Description of the image" style="position:absolute; border-radius: 100px; animation: rotateMove 8s linear infinite; width: 130px; height: 130px; top: 430px; left: 610px;">
+
+<style>
+    
+    @keyframes rotateMove {
+        0% {
+            transform: rotate(0deg);
+            left: 430;
+        }
+        100% {
+            transform: rotate(360deg);
+            /*left: calc(100% - 200px); 
+        }
+    }
+</style>
+
+
+        </div>
+    </section>
+
+        <section style="margin-top: 30px; " class="paris">
+            <div class="dos">
+        <img src="pic2.webp" alt="1image"  style="position: absolute; border-radius: 20px; top: 650px; left: 750px;" style="float: left;" height="500" width="470"> 
+<h1 style="font-family: Arial, ; position: absolute; top: 590px; left: 430px;">Pickup </h1>
+<h1 style="font-family: Arial, ; position: absolute; top: 650px; left: 430px;">Perfection.</h1>
+<h2 style="font-family: Arial, sans-serif;position: absolute; top: 750px; left: 430px; color: grey;">AI-Powered voice and dynamic</h2>
+<h2 style="font-family: Arial, sans-serif;position: absolute; top: 780px; left:  430px; color: grey;">wait times.</h2>
+                 <a href="#"><button style="padding: 10px 20px;color:black;border-radius: 5px; background-color: #f0f0f0;border: none; font-size: 16px;margin-top: 400px;position: absolute;left:310px;font-weight: bold;; cursor: pointer;">Learn More</button></a>
+                 </div>
+    </section>
+
+    <section class="paris">
+     <div class="tres">
+         <img src="pic3.webp" alt="1image"  style="position: absolute; border-radius: 20px; top: 1230px; left: 300px;" style="float: left;" height="500" width="470"> 
+<h1 style="float: right;font-family: Arial, ; position: absolute; top: 1090px; left: 850px;">Exceed</h1>
+<h1 style="float: right;font-family: Arial, ; position: absolute; top: 1150px; left: 850px; ">Expectations.</h1>
+<h2 style="font-family: Arial, sans-serif; float: right;position: absolute; top: 1250px; left: 850px; color: grey;">Built for today and tomorrow's </h2>
+<h2 style="font-family: Arial, sans-serif; float: right;position: absolute; top: 1280px; left: 850px; color: grey;"> guest— mobile, convenient and </h2>
+<h2 style="font-family: Arial, sans-serif; float: right;position: absolute; top: 1310px; left: 850px; color: grey;">social.</h2>
+               <a href="#"> <button style="padding: 10px 20px;background-color: #f0f0f0;color:black;border-radius: 5px;border: none; font-size: 16px;color: white; color: white;margin-top: 1010px;float: right;position: absolute;left: 850px;font-weight: bold;font-weight: bold;color:black; cursor: pointer;">Learn More</button></a>
+     </div>   
+    </section>
+
+    <section class="parisan">
+        <div class="kwatro">
+           <input type="text" placeholder="Name" style="width: 29%; padding: 16px; font-size: 16px; margin: 10px 0; border: 1px solid #ccc; border-radius: 7px;margin-top: 1325px;float: right;position: absolute;bold;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);left: 290px;" required>
+
+      <input type="Email" placeholder="Email" style="width: 29%; padding: 16px; font-size: 16px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; margin-top: 1395px;float: right;position: absolute;bold;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);left: 290px;"required>
+
+        <input type="Phone number" placeholder="Phone" style="width: 29%; padding: 16px; font-size: 16px; margin: 10px 0; border: 1px solid #ccc; border-radius: 7px; margin-top: 1465px;float: right;position: absolute;bold;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);left: 290px;"required>
+
+          <input type="Restaurant Name" placeholder="Restaurant Name" style="width: 29%; padding: 16px; font-size: 16px; margin: 10px 0; border: 1px solid #ccc; border-radius: 7px; margin-top: 1535px;float: right;position: absolute;bold;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);left: 290px;"required>
+
+                 <a href="#"><button type="submit" style="width: 31.2%; padding: 15px;   background-color: #0099FF; color: white; border: none; border-radius: 7px; cursor: pointer;margin-top: 1605px;position: absolute;font-weight: bold;left: 290px; font-size: 16px; ">Get A Demo</button></a>
+
+                 <h1 style="float: right;font-family: Arial, ; position: absolute; top: 1550px; left: 830px; font-size: 60px;">The Platform for </h1>
+                 <h1 style="float: right;font-family: Arial, ; position: absolute; top: 1610px; left: 830px; font-size: 60px;">QSR Owners.</h1>
+                 <h2 style="font-family: Arial, sans-serif; float: right;position: absolute; top: 1705px; left: 830px; color: grey;">Snackpass is the next generation of</h2>
+                 <h2 style="font-family: Arial, sans-serif; float: right;position: absolute; top: 1735px; left: 830px; color: grey;">quick-service technology. Enterprise</h2>
+                 <h2 style="font-family: Arial, sans-serif; float: right;position: absolute; top: 1765px; left: 830px; color: grey;">grade innovation for all QSRs.</h2>
+  
+        </div>
+    </section>
+
+    <h1 class="heading">Loved by thousands of operators at</h1>
+   <section class="running">
+   <ul class="running_list">
+    <li><img decoding="async" sizes="45px" src="P7.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P3.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P6.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P1.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P10.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P5.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P9.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P2.JPg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P8.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P4.png" alt="pic"></li>
+
+    <li><img decoding="async" sizes="45px" src="P2.JPg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P8.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P4.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P9.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P5.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P10.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P1.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P6.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P3.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P7.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P2.JPg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P6.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P9.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P4.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P1.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P7.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P5.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P3.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P8.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P10.png" alt="pic"></li>
+
+    <li><img decoding="async" sizes="45px" src="P1.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P5.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P3.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P8.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P10.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P9.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P7.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P6.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P2.JPg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P4.png" alt="pic"></li>
+</ul>
+
+</section>
+
+<section class="runningwan">
+    <ul class="running_listwan">
+    <li><img decoding="async" sizes="45px" src="P2.JPg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P6.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P9.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P4.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P1.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P7.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P5.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P3.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P8.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P10.png" alt="pic"></li>
+
+    <li><img decoding="async" sizes="45px" src="P1.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P5.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P3.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P8.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P10.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P9.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P7.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P6.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P2.JPg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P4.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P7.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P3.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P6.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P1.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P10.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P5.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P9.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P2.JPg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P8.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P4.png" alt="pic"></li>
+
+    <li><img decoding="async" sizes="45px" src="P2.JPg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P8.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P4.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P9.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P5.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P10.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P1.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P6.jpg" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P3.png" alt="pic"></li>
+    <li><img decoding="async" sizes="45px" src="P7.png" alt="pic"></li>
+</ul>
+
+</section>
+
+<section class="swipe">
+    <ul class="swipe_list">
+        <li style="background-color: transparent;" class="one">
+            <h1 style="font-size: 36px; letter-spacing: -0.1px; top: -20px; left: 140px; text-alignment: left; color: rgb(15, 15, 15);">Why fast growing</h1>
+            <h1 style="font-size: 36px; letter-spacing: -0.1px; top: 20px; left:140px; text-alignment: left; color: rgb(15, 15, 15);">restaurant brands</h1>
+            <h1 style="font-size: 36px; letter-spacing: -0.1px; top: 60px; left: 140px; text-alignment: left; color: rgb(15, 15, 15);">choose Snackpass</h1>
+
+            <h2  style="line-height: 1.5em; position: absolute; color: rgb(88, 91, 95); font-size: 18px; margin-top: 170px; left: 140px; font-weight: 400; ">Future proof your business. Stay<br> ahead of the competition without<br> spending millions.<br></h2>
+            <h2  style="line-height: 1.5em; position: absolute; color: rgb(88, 91, 95); font-size: 18px; margin-top: 270px; left: 140px; font-weight: 400; ">Offer next generation customer<br> experiences like Starbucks and<br> McDonalds. All customized to<br> your brand. </h2>
+            <a href="#"><button style="left: 140px; margin-top: -300px; font-size: 18px; font-weight: 700; text-alignment: center; text-color: rgb(255, 255, 255); width: 170px;
+            height: 55px; border-radius: 10px;">Case Studies</button></a>
+        </li>
+        <li style="background-color: transparent;" class="one">
+            <div style="background-color: transparent;" class="one1">
+    <video src="vid1.mov" autoplay muted loop style=" left: 10px;"></video>
+    </div>
+</li>
+
+        <li class="one">
+            <h1 style="font-size: 24px; letter-spacing: -0.1px; top: -5px; left: 790px; text-alignment: left; color: rgb(15, 15, 15);"><b>Xing Fu Tang</b></h1>
+            <h2  style="line-height: 1.0em; position: absolute; color: rgb(88, 91, 95); font-size: 14px; top: 50px; left: 790px; font-weight: 400; ">Taiwan's No. 1 Boba Brand</h2>
+            <h2  style="line-height: 1.5em; position: absolute; color: rgb(88, 91, 95); font-size: 15px; top: 80px; left: 790px; font-weight: 400; ">"When it comes time to service a<br> lot of tickets in short order, it is<br> <span style="color: #0099FF;">very helpful to be able to turn the<br> POS into a kiosk</span>… and have<br> customers order for themselves<br> and then dedicate that man<br> power to making the actual<br> drinks.”</h2>
+            <img src="pis1.webp" style="width: 50px; height: 50px; margin-top: 400px; margin-left: 20px; position: absolute; border-radius: 100%">
+            <h2  style="line-height: 1.0em; position: absolute; color: rgb(88, 91, 95); font-size: 14px; margin-top: 410px; margin-left: 10px; font-weight: 400; ">CEO, Andrew Chuang</h2>
+            <h2  style="line-height: 1.0em; position: absolute; color: rgb(88, 91, 95); font-size: 12px; margin-top: 430px; margin-left: 10px; font-weight: 400; ">Snackpass Partner Since 2023</h2>
+        </li>
+        </li>
+        <li style="background-color: transparent;" class="one">
+            <div style="background-color: transparent;" class="one1">
+    <video src="vid2.mp4" autoplay muted loop style=" left: 10px;"></video>
+    </div>
+</li>
+    
+    </ul>
+    <i id="left" class="fa-solid fa-angle-down fa-rotate-90" onclick="prevSlide()"></i>
+    <i id="right" class="fa-solid fa-angle-down fa-rotate-270" onclick="nextSlide()"></i>
+        
+</section>
+ 
+<style>
+    .isa{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .isarasa img{
+
+      width: 33%;
+      height: 20%;
+    }
+    .dagandagan{
+        background-color:  black;
+    }
+    .dagan{
+        position: relative;
+        display: flex; 
+        justify-content: space-around;
+        color: white;
+        width: 500%;
+        background-color: black;
+        font-weight: bold;
+        animation:moveLToR 150s linear infinite;
+    
+    }
+    @keyframes moveLToR{
+         0%{
+            transform: translateX(0%);
+        }
+            100%{
+                transform: translateX(-100%);
+            }
+
+
+    }
+
+    .isa1{
+        padding-top: 200px;
+    }
+   
+    .isarasa1 img{
+
+      width: 33%;
+      height: 20%;
+    }
+    .dagandagan1{
+        background-color:  black;
+    }
+    .dagan1{
+        position: relative;
+        display: flex; 
+        justify-content: space-around;
+        color: white;
+        width: 500%;
+        background-color: black;
+        font-weight: bold;
+        animation:moveL1ToR1 150s linear infinite;
+
+    
+    }
+    @keyframes moveL1ToR1{
+         0%{
+            transform: translateX(0%);
+        }
+            100%{
+                transform: translateX(-100%);
+            }
+
+
+    }
+    .isa2{
+        padding-top: 350px;
+    }
+   
+    .isarasa2 img{
+
+      width: 33%;
+      height: 20%;
+    }
+    .dagandagan2{
+        background-color:  black;
+    }
+    .dagan2{
+        position: relative;
+        display: flex; 
+        justify-content: space-around;
+        color: white;
+        width: 500%;
+        background-color: black;
+        font-weight: bold;
+        animation:moveL2ToR2 150s linear infinite;
+
+    
+    }
+    @keyframes moveL2ToR2{
+         0%{
+            transform: translateX(0%);
+        }
+            100%{
+                transform: translateX(-100%);
+            }
+
+
+    }
+     .isa3{
+        padding-bottom: 350px;
+    }
+      footer{
+        padding-top: 200px;
+
+    }
+
+
+</style>
+
+<section class="isa">      
+<div class="isara">
+<h2 style=" top:3300px; left:42%; color: #0099FF;">Front of house</h2> 
+<h1 style=" top:3320px; left:20%;">World-class guest experiences come </h1>
+<h1 style=" top:3375px; left:23%;">from exceptional care for detail.</h1>
+</div>
+
+
+        <div class="isarasa"> 
+            <img src="bp01.webp" alt="Hover Image">
+            <img src="bp02.webp" alt="Hover Image">
+            <img src="bp03.webp" alt="Hover Image">
+        </div>
+
+            
+                <h2 style="color: black; margin-top:-475px; left:40px;padding:">Kiosk</h2>
+                <h2 style="color: black; margin-top:-475px; left:550px;">Your Branded App</h2>
+                <h2 style="color: black; margin-top:-475px; left:1060px;">Customer Pickup Screen</h2>
+
+              <button style=" margin-top:-75px;position:absolute; left:40px;padding: 10px;border-radius: 20px;cursor: pointer;width:10%;background-color: black; font-weight: bold; color:white;">+ Learn more</button>
+<button style="margin-top:-75px;position:absolute; left:550px;padding: 10px;border-radius: 20px;cursor: pointer;width:10%;background-color: black; font-weight: bold; color:white;">+ Learn more</button>
+<button style="margin-top:-75px;position:absolute; left:1060px;padding: 10px;border-radius: 20px;cursor: pointer;width:10%;background-color: black; font-weight: bold; color:white;">+ Learn more</button>
+      
+    </div>
+        <div class="dagandagan">
+            <div class="dagan">
+            
+   <p>Mobile Ordering App</p>
+<p>Online Ordering</p>
+<p>Dynamic Menu Board</p>
+<p>Mobile Ordering App</p>
+<p>Online Ordering</p>
+<p>Dynamic Menu Board</p>
+<p>Mobile Ordering App</p>
+<p>Online Ordering</p>
+<p>Dynamic Menu Board</p>
+<p>Mobile Ordering App</p>
+<p>Online Ordering</p>
+<p>Dynamic Menu Board</p>
+<p>Mobile Ordering App</p>
+<p>Online Ordering</p>
+<p>Dynamic Menu Board</p>
+<p>Mobile Ordering App</p>
+<p>Online Ordering</p>
+<p>Dynamic Menu Board</p>
+<p>Mobile Ordering App</p>
+<p>Online Ordering</p>
+<p>Dynamic Menu Board</p>
+<p>Mobile Ordering App</p>
+<p>Online Ordering</p>
+<p>Dynamic Menu Board</p>
+
+
+</div>
+
+</div>
+</section>
+
+<section class="isa1">      
+<div class="isara1">
+<h2 style="position:absolute; top:4200px; left:40%; color: #0099FF;">Back of house</h2> 
+<h1 style="position:absolute; top:4220px; left:20%;">Eighty-six kitchen complexity with  </h1>
+<h1 style="position:absolute; top:4280px; left:20%;">effortless tools your team will love.</h1>
+</div>
+
+
+        <div class="isarasa1"> 
+            <img src="bp1.webp" alt="Hover Image">
+            <img src="bp2.webp" alt="Hover Image">
+            <img src="bp3.webp" alt="Hover Image">
+        </div>
+
+            
+                <h2 style="color: black; margin-top:-475px; left:40px;padding:">Point of Sale</h2>
+                <h2 style="color: black; margin-top:-475px; left:550px;">Kitchen Display System</h2>
+                <h2 style="color: black; margin-top:-475px; left:1060px;">Dashboard & Analytics</h2>
+
+              <button style=" margin-top:-75px;position:absolute; left:40px;padding: 10px;border-radius: 20px;cursor: pointer;width:10%;background-color: black; font-weight: bold; color:white;">+ Learn more</button>
+<button style="margin-top:-75px;position:absolute; left:550px;padding: 10px;border-radius: 20px;cursor: pointer;width:10%;background-color: black; font-weight: bold; color:white;">+ Learn more</button>
+<button style="margin-top:-75px;position:absolute; left:1060px;padding: 10px;border-radius: 20px;cursor: pointer;width:10%;background-color: black; font-weight: bold; color:white;">+ Learn more</button>
+      
+    </div>
+        <div class="dagandagan1">
+            <div class="dagan1">
+            
+    <p>Delivery Integration into POS</p>
+    <p>Label Printing</p>
+    <P>Station Receipt Printing</P>
+    <p>Kitchen Display Screen</p>
+    <p>Mobile Reports Dashboard</p>
+    <p>Delivery Integration into POS</p>
+    <p>Label Printing</p>
+    <P>Station Receipt Printing</P>
+    <p>Kitchen Display Screen</p>
+    <p>Mobile Reports Dashboard</p>
+    <p>Delivery Integration into POS</p>
+    <p>Label Printing</p>
+    <P>Station Receipt Printing</P>
+    <p>Kitchen Display Screen</p>
+    <p>Mobile Reports Dashboard</p>
+    <p>Delivery Integration into POS</p>
+    <p>Label Printing</p>
+    <P>Station Receipt Printing</P>
+    <p>Kitchen Display Screen</p>
+    <p>Mobile Reports Dashboard</p>
+    <p>Delivery Integration into POS</p>
+    <p>Label Printing</p>
+    <P>Station Receipt Printing</P>
+    <p>Kitchen Display Screen</p>
+    <p>Mobile Reports Dashboard</p>
+    <p>Delivery Integration into POS</p>
+    <p>Label Printing</p>
+</div>
+
+</div>
+</section>
+
+
+
+<section class="isa2">      
+<div class="isara2">
+<h2 style="position:absolute; top:5100px; left:45%; color: #0099FF;">Marketing</h2> 
+<h1 style="position:absolute; top:5120px; left:25%;">Connect with customers and turn   </h1>
+<h1 style="position:absolute; top:5180px; left:32%;">first-time into lifetime.</h1>
+</div>
+
+
+        <div class="isarasa2"> 
+            <img src="bp10.webp" alt="Hover Image">
+            <img src="bp20.webp" alt="Hover Image">
+            <img src="bp30.webp" alt="Hover Image">
+        </div>
+
+            
+                <h2 style="color: black; margin-top:-475px; left:40px;padding:">Customer Data Platform</h2>
+                <h2 style="color: black; margin-top:-475px; left:550px;">Loyalty and Referrals</h2>
+                <h2 style="color: black; margin-top:-475px; left:1060px;">Snackpass App</h2>
+
+              <button style=" margin-top:-75px;position:absolute; left:40px;padding: 10px;border-radius: 20px;cursor: pointer;width:10%;background-color: black; font-weight: bold; color:white;">+ Learn more</button>
+<button style="margin-top:-75px;position:absolute; left:550px;padding: 10px;border-radius: 20px;cursor: pointer;width:10%;background-color: black; font-weight: bold; color:white;">+ Learn more</button>
+<button style="margin-top:-75px;position:absolute; left:1060px;padding: 10px;border-radius: 20px;cursor: pointer;width:10%;background-color: black; font-weight: bold; color:white;">+ Learn more</button>
+      
+    </div>
+        <div class="dagandagan2">
+            <div class="dagan2">
+    <p>Omni-channel Rewards Program</p>
+<p>Custom Website</p>
+<p>Automated Promotional Campaigns</p>
+<p>Social Promos</p>
+<p>Omni-channel Rewards Program</p>
+<p>Custom Website</p>
+<p>Automated Promotional Campaigns</p>
+<p>Social Promos</p>
+<p>Omni-channel Rewards Program</p>
+<p>Custom Website</p>
+<p>Automated Promotional Campaigns</p>
+<p>Social Promos</p>
+<p>Omni-channel Rewards Program</p>
+<p>Custom Website</p>
+<p>Automated Promotional Campaigns</p>
+<p>Social Promos</p>
+<p>Omni-channel Rewards Program</p>
+<p>Custom Website</p>
+<p>Automated Promotional Campaigns</p>
+<p>Social Promos</p>
+<p>Omni-channel Rewards Program</p>
+<p>Custom Website</p>
+<p>Automated Promotional Campaigns</p>
+<p>Social Promos</p>
+
+
+
+</div>
+
+</div>
+</section>
+
+<section class="isa3">
+     <input type="text" placeholder="Name" style="width: 29%; padding: 16px; font-size: 16px; margin: 10px 0; border: 1px solid #ccc; border-radius: 7px;margin-top: 120px;float: right;position: absolute;bold;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);left: 750px;" required>
+
+           <input type="Email" placeholder="Email" style="width: 29%; padding: 16px; font-size: 16px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; margin-top: 185px;float: right;position: absolute;bold;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);left: 750px;"required>
+
+           <input type="Phone number" placeholder="Phone" style="width: 29%; padding: 16px; font-size: 16px; margin: 10px 0; border: 1px solid #ccc; border-radius: 7px; margin-top: 250px;float: right;position: absolute;bold;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);left: 750px;"required>
+
+           <input type="Restaurant Name" placeholder="Restaurant Name" style="width: 29%; padding: 16px; font-size: 16px; margin: 10px 0; border: 1px solid #ccc; border-radius: 7px; margin-top: 315px;float: right;position: absolute;bold;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);left: 750px;"required>
+       </div>
+
+       <div>
+        <a href="#"><button type="submit" style="width: 31.2%; padding: 15px;   background-color: #0099FF; color: white; border: none; border-radius: 7px; cursor: pointer;  margin-top: 380px;position: absolute;font-weight: bold;left:750px; font-size: 16px;">Get A Demo</button></a>
+       </div>
+
+       <div>
+        <h1 style="left:280px; margin-top:120px;">Get your</h1>
+        <h1 style="left:250px;margin-top:180px;">kiosk today.</h1>
+        <h2 style="left:250px;margin-top:300px;">Onboarding is easy, and we'll be </h2>
+        <h2 style="left:250px;margin-top:330px;">there every step of the way.</h2>
+       </div>
+         
+</section>
+
+</main>	
+
+<footer>
+    <div class="footer">
+        <div style="
+            padding-left: 17%;" class="otlen">
+            <ul>
+    <li style="color: black; font-size: 17px; margin-left: 5px;"><b>Product</b></li>
+    <li><a href="#">SnackOS™</a></li>
+    <li><a href="#">Snackpass™ App</a></li>
+    <li><a href="#">Front of House</a></li>
+    <li><a href="#">Back of House</a></li>
+    <li><a href="#">Marketing</a></li>
+</ul>
+
+<ul style="padding-left: 150px;">
+    <li style="color: black; font-size: 17px; margin-left: 5px;"><b>Learn</b></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Support</a></li>
+    <li><a href="#">Case Studies</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">FAQ</a></li>
+</ul>
+
+<ul style="padding-left: 150px;">
+    <li style="color: black; font-size: 17px; margin-left: 5px;"><b>Resources</b></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Careers</a></li>
+    <li><a href="#">Privacy Center</a></li>
+    <li><a href="#">Legal</a></li>
+</ul>
+</div>
+</div>
+
+ <div class="sub-footer">
+           
+
+            <ul style=" color: #bebec2; margin-left: -45px;">
+            <li><b>© 2024 Not Just Snacks, Inc.</b></li>
+
+    <li style="position: absolute; margin-left: -190px;"><a href="#"><img src="in.png" alt="TikTok"></a></li>
+    <li style="position: absolute; margin-left: -140px;"><a href="#" target="_blank"><img src="ins.png" alt="Instagram"></a></li>
+    <li style="position: absolute; margin-left: -90px;"><a href="#" target="_blank"><img src="tt.png" alt="Twitter"></a></li>
+            </ul>
+
+           
+         </div>
+    
+    
+<style>
+        .sub-footer{
+            margin-inline: 20%;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-top-length: 86%;
+
+        }
+        
+        .sub-footer ul a{
+            list-style: none;
+            font-size: 12px;
+
+            margin-left: 750px;
+
+        }
+         .sub-footer li {
+            padding: 5px;
+            color: #585b5f;
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+
+        }
+        .sub-footer li a:hover{
+            padding: 5px;
+            opacity: 0.7;
+            cursor: pointer;
+
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 50px;
+
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            
+        }
+        .otlen{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 50px;
+        }
+        .otlen ul {
+            list-style: none;
+            color: #585b5f;
+            font-size: 12px;
+        }
+        .otlen ul a{
+            color: #585b5f;
+            font-size: 17px;
+        }
+         .otlen li a{
+            padding: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            padding-top: 50px;
+
+        }
+        .otlen li{
+               
+            padding-top: 15px;
+        }
+        .otlen li a:hover{
+            padding: 5px;
+            color: black;
+            text-decoration: underline;
+            cursor: pointer;
+
+        }
+          
+</style>
+
+</footer>
+
+</body>
+</html>
